@@ -11,13 +11,18 @@ Quickstart
 ----
 
 The following commands download the current stable version of the installer and
-then install the latest deal.II release and common dependencies:
+then install the latest deal.II development version and common dependencies from
+this forked repository:
 
 ```bash
-  git clone https://github.com/dealii/candi.git
+  git clone https://github.com/chaos-polymtl/candi.git
   cd candi
   ./candi.sh
 ```
+
+To change the version of deal.II installed, change the value of the 
+`DEAL_II_VERSION` variable in `candi.cfg` (line 97) to your desired stable 
+release (e.g. `v9.5.2`).
 
 Follow the instructions on the screen
 (you can abort the process by pressing < CTRL > + C)
@@ -50,12 +55,12 @@ Ubuntu distribution on Windows 10 you can follow the
 [Microsoft Documentation](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
 Within the Ubuntu terminal application, upgrade Ubuntu first, then
-clone this repository and run candi
+clone this forked repository and run candi
 
 ```bash
   sudo apt-get update
   sudo apt-get upgrade
-  git clone https://github.com/dealii/candi.git
+  git clone https://github.com/chaos-polymtl/candi.git
   cd candi
   ./candi.sh
 ```
